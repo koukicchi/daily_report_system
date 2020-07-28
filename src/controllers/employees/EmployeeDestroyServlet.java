@@ -43,8 +43,10 @@ public class EmployeeDestroyServlet extends HttpServlet {
             em.getTransaction().begin();
             em.getTransaction().commit();
             em.close();
-            //request.getSession().removeAttribute("employee_id");
+
             request.getSession().setAttribute("flush","削除が完了しました");
+
+            request.getSession().removeAttribute("employee_id");
 
             response.sendRedirect(request.getContextPath() + "/employees/index");
         }
