@@ -10,12 +10,12 @@ public class ReportValidator {
         List<String> errors = new ArrayList<String>();
 
         String title_error = _validateTitle(r.getTitle());
-        if (title_error.equals("")) {
+        if (!title_error.equals("")) {
             errors.add(title_error);
         }
 
         String content_error = _validateContent(r.getContent());
-        if (content_error.equals("")) {
+        if (!content_error.equals("")) {
             errors.add(content_error);
         }
 
