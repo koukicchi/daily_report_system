@@ -46,6 +46,8 @@ public class TopPageIndexServlet extends HttpServlet {
             page = 1;
         }
 
+
+        //自分の日報だけを取得。パラメータに現在ログインしているユーザー情報をセット
         List<Report> reports = em.createNamedQuery("getMyAllReports", Report.class)
                 .setParameter("employee", login_employee).setFirstResult((page - 1) * 15).setMaxResults(15)
                 .getResultList();
