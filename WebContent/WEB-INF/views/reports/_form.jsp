@@ -14,7 +14,7 @@
 <label for="report_date">日付</label>
 <br />
 <input type="date" name="report_date"
-    value='<fmt:formatDate value="${report.report_date }" pattern="yyyy/MM/dd"/>' />
+    value='<fmt:formatDate value="${report.report_date }" pattern="yyyy-MM-dd"/>' />
 <br />
 <br />
 
@@ -32,9 +32,9 @@
 
 <label for="content">内容</label>
 <br />
-<textarea name="content" rows="10" cols="50">${report.content }</textarea>
+<textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br />
 <br />
 
-<input type="hidden" name="_token" value="${_token }">
+<input type="hidden" name="_token" value="${_token}">
 <button type="submit">投稿</button>
