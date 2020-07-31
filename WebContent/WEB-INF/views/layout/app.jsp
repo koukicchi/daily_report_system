@@ -5,7 +5,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>I日報管理システム</title>
+<title>日報管理システム</title>
 <link rel="stylesheet" href="<c:url value='/css/reset.css'></c:url>">
 <link rel="stylesheet" href="<c:url value='/css/style.css'></c:url>">
 </head>
